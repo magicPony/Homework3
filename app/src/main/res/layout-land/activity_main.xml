@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.taras.homework3.MainActivity">
+
+    <EditText
+        android:numeric="integer"
+        style="@style/my_style"
+        android:id="@+id/first_field"
+        android:hint="@string/first_number_et_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="@style/my_style"
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_minus"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/result_tv"
+        android:layout_toEndOf="@+id/result_tv" />
+
+    <Button
+        android:id="@+id/button_plus"
+        style="@style/my_style"
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_minus"
+        android:layout_toLeftOf="@+id/result_tv"
+        android:layout_toStartOf="@+id/result_tv" />
+
+    <EditText
+        android:numeric="integer"
+        style="@style/my_style"
+        android:hint="@string/second_number_et_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_field"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button_info"
+        android:layout_alignEnd="@+id/button_info" />
+
+    <TextView
+        android:id="@+id/result_tv"
+        style="@style/my_style"
+        android:gravity="center"
+        android:text="@string/result_tv"
+        android:layout_width="@dimen/result_tv_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_info"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="@style/my_style"
+        android:textSize="16sp"
+        android:textColor="@color/colorTotalBlack"
+        android:id="@+id/button_info"
+        android:text="@string/info_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
